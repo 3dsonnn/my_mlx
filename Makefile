@@ -29,10 +29,10 @@ ARC = ar rc
 INDEX = ranlib
 RM = rm -rf
 
-LIBFTPATH = ../Super-Libft
+LIBFTPATH = Super-Libft
 LIBFT =	$(LIBFTPATH)/libft.a
 
-MLXPATH = ../minilibx-linux
+MLXPATH = minilibx-linux
 MLX = $(MLXPATH)/libmlx.a
 FLAGS = -I./$(MLXPATH) -O3
 LIBS =	-L./$(MLXPATH) -lmlx -lX11 -lXext -lm
