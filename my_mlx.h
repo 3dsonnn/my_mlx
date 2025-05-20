@@ -6,35 +6,35 @@
 /*   By: efinda <efinda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/16 10:33:35 by efinda            #+#    #+#             */
-/*   Updated: 2025/05/19 18:07:57 by efinda           ###   ########.fr       */
+/*   Updated: 2025/05/20 10:36:04 by efinda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef MY_MLX_H
 # define MY_MLX_H
 
-# include <unistd.h>
 # include "../Super-Libft/inc/libft.h"
 # include "mlx.h"
+# include "mlx_int.h"
 
 # define BLACK 0x000000
 
 typedef struct s_rgb
 {
-	int			r;
-	int			g;
-	int			b;
-}				t_rgb;
+	int						r;
+	int						g;
+	int						b;
+}							t_rgb;
 
 typedef struct s_img
 {
-	void		*img;
-	int			*addr;
-	int			line_len;
-	int			bpp;
-	int			endian;
-	t_point		size;
-}				t_img;
+	void					*img;
+	int						*addr;
+	int						line_len;
+	int						bpp;
+	int						endian;
+	t_point					size;
+}							t_img;
 
 // typedef struct s_img_to_img
 // {
@@ -49,18 +49,24 @@ typedef struct s_img
 // 	int			color_aux;
 // }				t_img_to_img;
 
-extern void		my_mlx_pixel_put(t_img *img, int x, int y, int color);
-extern int		my_mlx_get_pixel(t_img img, int x, int y);
-extern int		my_mlx_get_rgb_color(int r, int g, int b);
-extern t_rgb	my_mlx_get_rgb_values(int color);
-extern void		my_mlx_init_img(t_img *img);
-void			my_mlx_destroy_img(void *mlx, t_img *img);
-void			my_mlx_new_img(void *mlx, t_img *img, t_point size);
-void			my_mlx_duplicate_img(void *mlx, t_img *dst, t_img src);
-void			my_mlx_get_data_addr(t_img *img);
-int				my_mlx_get_lerp_color(int start, int end, float interpolant);
-void			my_mlx_resize_img(void *mlx, t_img *img, t_point size);
-void			my_mlx_color_img(t_img *img, int color);
+extern struct s_col_name	mlx_col_name[];
+extern void					my_mlx_pixel_put(t_img *img, int x, int y,
+								int color);
+extern int					my_mlx_get_pixel(t_img img, int x, int y);
+extern int					my_mlx_get_rgb_color(int r, int g, int b);
+extern t_rgb				my_mlx_get_rgb_values(int color);
+extern void					my_mlx_init_img(t_img *img);
+void						my_mlx_destroy_img(void *mlx, t_img *img);
+void						my_mlx_new_img(void *mlx, t_img *img, t_point size);
+void						my_mlx_duplicate_img(void *mlx, t_img *dst,
+								t_img src);
+void						my_mlx_get_data_addr(t_img *img);
+int							my_mlx_get_lerp_color(int start, int end,
+								float interpolant);
+void						my_mlx_resize_img(void *mlx, t_img *img,
+								t_point size);
+void						my_mlx_color_img(t_img *img, int color);
+int							my_mlx_get_color_from_name(const char *input_name);
 // void			my_mlx_put_img_to_img(t_img_to_img base);
 // void			my_mlx_drawn_triangle(t_img *img, t_point crd, int size,
 // 					int color);
