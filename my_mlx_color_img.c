@@ -6,11 +6,11 @@
 /*   By: efinda <efinda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/19 17:42:36 by efinda            #+#    #+#             */
-/*   Updated: 2025/05/19 17:43:40 by efinda           ###   ########.fr       */
+/*   Updated: 2025/05/20 14:55:20 by efinda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "my_mlx.h"
+#include "inc/my_mlx.h"
 
 void	my_mlx_color_img(t_img *img, int color)
 {

@@ -6,11 +6,11 @@
 /*   By: efinda <efinda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/16 11:12:48 by efinda            #+#    #+#             */
-/*   Updated: 2025/05/16 11:16:01 by efinda           ###   ########.fr       */
+/*   Updated: 2025/05/20 14:54:32 by efinda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "my_mlx.h"
+#include "inc/my_mlx.h"
 
 void	my_mlx_new_img(void *mlx, t_img *img, t_point size)
 {

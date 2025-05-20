@@ -6,11 +6,11 @@
 /*   By: efinda <efinda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/16 11:20:23 by efinda            #+#    #+#             */
-/*   Updated: 2025/05/16 11:20:40 by efinda           ###   ########.fr       */
+/*   Updated: 2025/05/20 14:55:03 by efinda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "my_mlx.h"
+#include "inc/my_mlx.h"
 
 void	my_mlx_get_data_addr(t_img *img)
 {

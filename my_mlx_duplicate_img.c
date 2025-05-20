@@ -6,11 +6,11 @@
 /*   By: efinda <efinda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/16 11:16:33 by efinda            #+#    #+#             */
-/*   Updated: 2025/05/16 11:19:38 by efinda           ###   ########.fr       */
+/*   Updated: 2025/05/20 14:55:12 by efinda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "my_mlx.h"
+#include "inc/my_mlx.h"
 
 void	my_mlx_duplicate_img(void *mlx, t_img *dst, t_img src)
 {

@@ -6,11 +6,11 @@
 /*   By: efinda <efinda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/16 12:50:54 by efinda            #+#    #+#             */
-/*   Updated: 2025/05/16 12:55:25 by efinda           ###   ########.fr       */
+/*   Updated: 2025/05/20 14:54:58 by efinda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "my_mlx.h"
+#include "inc/my_mlx.h"
 
 int	my_mlx_get_lerp_color(int start, int end, float interpolant)
 {

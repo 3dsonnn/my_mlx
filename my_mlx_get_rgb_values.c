@@ -6,11 +6,11 @@
 /*   By: efinda <efinda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/16 10:43:31 by efinda            #+#    #+#             */
-/*   Updated: 2025/05/16 11:07:24 by efinda           ###   ########.fr       */
+/*   Updated: 2025/05/20 14:54:40 by efinda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "my_mlx.h"
+#include "inc/my_mlx.h"
 
 inline t_rgb	my_mlx_get_rgb_values(int color)
 {
