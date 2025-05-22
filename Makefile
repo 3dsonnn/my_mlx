@@ -6,7 +6,7 @@
 #    By: efinda <efinda@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/05/16 12:56:36 by efinda            #+#    #+#              #
-#    Updated: 2025/05/20 16:09:52 by efinda           ###   ########.fr        #
+#    Updated: 2025/05/21 15:37:09 by efinda           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -24,6 +24,7 @@ SRC =	my_mlx_init_img.c				\
 		my_mlx_get_rgb_color.c			\
 		my_mlx_get_lerp_color.c			\
 		my_mlx_get_rgb_values.c			\
+		my_mlx_put_img_to_img.c			\
 		my_mlx_get_color_from_name.c	\
 		my_mlx_print_available_colors.c	\
 		my_mlx_g_colors.c				\
