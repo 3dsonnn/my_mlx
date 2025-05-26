@@ -6,7 +6,7 @@
 /*   By: efinda <efinda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/16 10:33:35 by efinda            #+#    #+#             */
-/*   Updated: 2025/05/21 15:39:45 by efinda           ###   ########.fr       */
+/*   Updated: 2025/05/25 19:09:42 by efinda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,12 @@
 # include "../minilibx-linux/mlx.h"
 # include "my_mlx_structs.h"
 
-# define BLACK 0x000000
-# define TRANSPARENT 0xFF000000
+# define BLACK			0x000000
+# define RED			0xFF0000
+# define GREEN			0x00FF00
+# define BLUE			0x0000FF
+# define WHITE			0xFFFFFF
+# define TRANSPARENT	0xFF000000
 
 typedef struct s_img_to_img
 {
@@ -49,6 +53,7 @@ void			my_mlx_print_available_colors(void);
 void			my_mlx_color_img(t_img *img, int color);
 int				my_mlx_get_color_from_name(const char *input_name);
 void			my_mlx_put_img_to_img(t_img_to_img base);
+void			my_mlx_draw_line_to_img(t_img *img, t_point crd, t_point size, int color);
 // void			my_mlx_drawn_triangle(t_img *img, t_point crd, int size,
 // 					int color);
 

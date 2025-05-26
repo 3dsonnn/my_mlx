@@ -6,14 +6,16 @@
 #    By: efinda <efinda@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/05/16 12:56:36 by efinda            #+#    #+#              #
-#    Updated: 2025/05/21 15:37:09 by efinda           ###   ########.fr        #
+#    Updated: 2025/05/25 18:13:14 by efinda           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = my_mlx.a
 
-SRC =	my_mlx_init_img.c				\
+SRC =	my_mlx_new_img.c				\
 		my_mlx_new_img.c				\
+		my_mlx_init_img.c				\
+		my_mlx_g_colors.c				\
 		my_mlx_color_img.c				\
 		my_mlx_get_pixel.c				\
 		my_mlx_pixel_put.c				\
@@ -25,9 +27,9 @@ SRC =	my_mlx_init_img.c				\
 		my_mlx_get_lerp_color.c			\
 		my_mlx_get_rgb_values.c			\
 		my_mlx_put_img_to_img.c			\
+		my_mlx_draw_line_to_img.c		\
 		my_mlx_get_color_from_name.c	\
 		my_mlx_print_available_colors.c	\
-		my_mlx_g_colors.c				\
 
 CC = cc
 ARC = ar rc
