@@ -6,7 +6,7 @@
 /*   By: efinda <efinda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/20 14:57:09 by efinda            #+#    #+#             */
-/*   Updated: 2025/05/20 15:14:07 by efinda           ###   ########.fr       */
+/*   Updated: 2025/05/27 18:44:21 by efinda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,5 +37,18 @@ typedef struct s_img
 	int		endian;
 	t_point	size;
 }			t_img;
+
+typedef struct s_img_to_img
+{
+	t_img	*dst;
+	t_img	src;
+	t_img	*aux;
+	t_point	dst_point;
+	t_point	src_point;
+	t_point	size;
+	int		filter;
+	int		skip;
+	int		color_aux;
+}			t_img_to_img;
 
 #endif

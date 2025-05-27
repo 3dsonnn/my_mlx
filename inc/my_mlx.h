@@ -6,7 +6,7 @@
 /*   By: efinda <efinda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/16 10:33:35 by efinda            #+#    #+#             */
-/*   Updated: 2025/05/25 19:09:42 by efinda           ###   ########.fr       */
+/*   Updated: 2025/05/27 18:44:26 by efinda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,19 +23,6 @@
 # define BLUE			0x0000FF
 # define WHITE			0xFFFFFF
 # define TRANSPARENT	0xFF000000
-
-typedef struct s_img_to_img
-{
-	t_img		*dst;
-	t_img		src;
-	t_img		*aux;
-	t_point		dst_point;
-	t_point		src_point;
-	t_point		size;
-	int			filter;
-	int			skip;
-	int			color_aux;
-}				t_img_to_img;
 
 extern t_color	my_mlx_g_colors[];
 extern void		my_mlx_pixel_put(t_img *img, int x, int y, int color);
