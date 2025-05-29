@@ -6,11 +6,11 @@
 /*   By: efinda <efinda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/19 15:51:00 by efinda            #+#    #+#             */
-/*   Updated: 2025/05/20 14:54:14 by efinda           ###   ########.fr       */
+/*   Updated: 2025/05/29 20:32:17 by efinda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "inc/my_mlx.h"
+#include "my_mlx.h"
 
 static void	fill_img(t_img src, t_img *dst, int x, int y)
 {

@@ -6,11 +6,11 @@
 /*   By: efinda <efinda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/25 18:12:37 by efinda            #+#    #+#             */
-/*   Updated: 2025/05/25 19:04:34 by efinda           ###   ########.fr       */
+/*   Updated: 2025/05/29 20:33:28 by efinda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "inc/my_mlx.h"
+#include "my_mlx.h"
 
 int	my_mlx_draw_line_to_img_checks(t_img *img, t_point crd, t_point *size)
 {

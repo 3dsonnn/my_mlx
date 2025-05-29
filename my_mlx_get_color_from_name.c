@@ -6,11 +6,11 @@
 /*   By: efinda <efinda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/20 10:30:21 by efinda            #+#    #+#             */
-/*   Updated: 2025/05/20 15:23:50 by efinda           ###   ########.fr       */
+/*   Updated: 2025/05/29 20:33:13 by efinda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "inc/my_mlx.h"
+#include "my_mlx.h"
 
 int	my_mlx_get_color_from_name(const char *input_name)
 {

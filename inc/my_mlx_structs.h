@@ -6,14 +6,14 @@
 /*   By: efinda <efinda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/20 14:57:09 by efinda            #+#    #+#             */
-/*   Updated: 2025/05/27 18:44:21 by efinda           ###   ########.fr       */
+/*   Updated: 2025/05/29 20:55:56 by efinda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef MY_MLX_STRUCTS_H
 # define MY_MLX_STRUCTS_H
 
-# include "../Super-Libft/inc/libft.h"
+# include "libft.h"
 
 typedef struct s_color
 {

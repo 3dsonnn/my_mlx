@@ -6,15 +6,14 @@
 /*   By: efinda <efinda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/16 10:33:35 by efinda            #+#    #+#             */
-/*   Updated: 2025/05/27 18:44:26 by efinda           ###   ########.fr       */
+/*   Updated: 2025/05/29 20:55:50 by efinda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef MY_MLX_H
 # define MY_MLX_H
 
-# include "../Super-Libft/inc/libft.h"
-# include "../minilibx-linux/mlx.h"
+# include "mlx.h"
 # include "my_mlx_structs.h"
 
 # define BLACK			0x000000

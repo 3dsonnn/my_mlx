@@ -6,11 +6,11 @@
 /*   By: efinda <efinda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/21 15:32:27 by efinda            #+#    #+#             */
-/*   Updated: 2025/05/21 15:36:39 by efinda           ###   ########.fr       */
+/*   Updated: 2025/05/29 20:32:25 by efinda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "inc/my_mlx.h"
+#include "my_mlx.h"
 
 static int	my_mlx_put_img_to_img_init(t_img_to_img *base, t_point *limits,
 		t_point *iter)

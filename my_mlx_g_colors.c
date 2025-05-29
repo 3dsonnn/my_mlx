@@ -6,11 +6,11 @@
 /*   By: efinda <efinda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/20 15:02:56 by efinda            #+#    #+#             */
-/*   Updated: 2025/05/20 15:06:43 by efinda           ###   ########.fr       */
+/*   Updated: 2025/05/29 20:33:18 by efinda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "inc/my_mlx.h"
+#include "my_mlx.h"
 
 t_color	my_mlx_g_colors[] = {{"snow", 0xfffafa},
 								{"ghost white", 0xf8f8ff},
