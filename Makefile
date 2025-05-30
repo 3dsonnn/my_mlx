@@ -6,7 +6,7 @@
 #    By: efinda <efinda@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/05/16 12:56:36 by efinda            #+#    #+#              #
-#    Updated: 2025/05/30 07:50:43 by efinda           ###   ########.fr        #
+#    Updated: 2025/05/30 09:28:33 by efinda           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -43,7 +43,6 @@ INDEX = ranlib
 ARC = ar rc
 RM = rm -rf
 
-
 MINILIBX_FLAGS = -lX11 -lXext -lm
 MINILIBX_PATH = minilibx-linux
 MINILIBX = $(MINILIBX_PATH)/libmlx.a
@@ -70,6 +69,5 @@ fclean: clean
 	@$(RM) $(NAME)
 
 re: fclean all
-	@$(MAKE) -C $(MINILIBX_PATH) re
 
 .PHONY: all clean fclean re
