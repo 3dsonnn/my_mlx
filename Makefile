@@ -6,7 +6,7 @@
 #    By: efinda <efinda@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2025/05/16 12:56:36 by efinda            #+#    #+#              #
-#    Updated: 2025/05/29 20:55:11 by efinda           ###   ########.fr        #
+#    Updated: 2025/05/30 07:50:43 by efinda           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -28,44 +28,48 @@ SRC =	my_mlx_new_img.c				\
 		my_mlx_put_img_to_img.c			\
 		my_mlx_draw_line_to_img.c		\
 		my_mlx_get_color_from_name.c	\
-		my_mlx_print_available_colors.c	\
+		my_mlx_get_available_color.c	\
 
 HEADERS	=	inc/my_mlx.h			\
 			inc/my_mlx_structs.h	\
 			../inc/libft.h			\
 			../inc/printf.h			\
+			minilibx-linux			\
 
 CC = cc
-FLAGS = -Wall -Wextra -Werror -I./inc -I../inc -I./$(MLXPATH)	
-ARC = ar rc
+FLAGS = -Wall -Wextra -Werror
+INC = -I./inc -I../inc -I./$(MINILIBX_PATH)
 INDEX = ranlib
+ARC = ar rc
 RM = rm -rf
 
-MLXPATH = minilibx-linux
-MLX = $(MLXPATH)/libmlx.a
+
+MINILIBX_FLAGS = -lX11 -lXext -lm
+MINILIBX_PATH = minilibx-linux
+MINILIBX = $(MINILIBX_PATH)/libmlx.a
 
 OBJ = $(SRC:.c=.o)
 
-all: $(MLX) $(NAME)
+all: $(MINILIBX) $(NAME)
 
 $(NAME): $(OBJ)
 	$(ARC) $(NAME) $(OBJ)
 	$(INDEX) $(NAME)
 
-$(MLX):
-	@$(MAKE) -C $(MLXPATH)
+$(MINILIBX):
+	@$(MAKE) -C $(MINILIBX_PATH)
 
 %.o: %.c $(HEADERS)
-	$(CC) $(FLAGS) -c $< -o $@
+	$(CC) $(FLAGS) $(INC) $(INC) -c $< -o $@
 
 clean:
 	@$(RM) $(OBJ)
-	@$(MAKE) -C $(MLXPATH) clean
+	@$(MAKE) -C $(MINILIBX_PATH) clean
 
 fclean: clean
 	@$(RM) $(NAME)
 
 re: fclean all
-	@$(MAKE) -C $(MLXPATH) re
+	@$(MAKE) -C $(MINILIBX_PATH) re
 
 .PHONY: all clean fclean re

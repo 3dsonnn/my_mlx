@@ -1,23 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   my_mlx_print_available_colors.c                    :+:      :+:    :+:   */
+/*   my_mlx_get_available_color.c                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: efinda <efinda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/20 12:32:01 by efinda            #+#    #+#             */
-/*   Updated: 2025/05/29 20:32:30 by efinda           ###   ########.fr       */
+/*   Updated: 2025/05/30 07:39:42 by efinda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "my_mlx.h"
 
-void	my_mlx_print_available_colors(void)
+char	*my_mlx_get_available_color(void)
 {
-	int	i;
+	static int	i;
 
-	i = -1;
-    ft_printf("These are the available colors on this system:\n");
-	while (my_mlx_g_colors[++i].name)
-        ft_printf("\t%s\n", my_mlx_g_colors[i].name);
+	if (my_mlx_g_colors[i].name)
+		return (my_mlx_g_colors[i++].name);
+	i = 0;
+	return (NULL);
 }

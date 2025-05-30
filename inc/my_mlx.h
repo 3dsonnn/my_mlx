@@ -6,7 +6,7 @@
 /*   By: efinda <efinda@student.42.fr>              +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/05/16 10:33:35 by efinda            #+#    #+#             */
-/*   Updated: 2025/05/29 20:55:50 by efinda           ###   ########.fr       */
+/*   Updated: 2025/05/30 07:32:33 by efinda           ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ void			my_mlx_duplicate_img(void *mlx, t_img *dst, t_img src);
 void			my_mlx_get_data_addr(t_img *img);
 int				my_mlx_get_lerp_color(int start, int end, float interpolant);
 void			my_mlx_resize_img(void *mlx, t_img *img, t_point size);
-void			my_mlx_print_available_colors(void);
+char			*my_mlx_get_available_color(void);
 void			my_mlx_color_img(t_img *img, int color);
 int				my_mlx_get_color_from_name(const char *input_name);
 void			my_mlx_put_img_to_img(t_img_to_img base);
