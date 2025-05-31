@@ -59,7 +59,7 @@ $(MINILIBX):
 	@$(MAKE) -C $(MINILIBX_PATH)
 
 %.o: %.c $(HEADERS)
-	$(CC) $(FLAGS) $(INC) $(INC) -c $< -o $@
+	$(CC) $(FLAGS) $(INC) -c $< -o $@
 
 clean:
 	@$(RM) $(OBJ)
